@@ -1,0 +1,31 @@
+  // C++ code - Arduino
+
+void setup()
+{
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+  
+  // Inicializa todos os pinos desligados
+  digitalWrite(7, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(5, HIGH);
+}
+desliga os outros
+  digitalWrite(7, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(5, LOW);
+  delay(1000); 
+
+  // Liga o pino 6 e desliga os outros
+  digitalWrite(7, LOW);
+  digitalWrite(6, HIGH);
+  digitalWrite(5, LOW);
+  delay(2000); 
+
+  // Liga o pino 5 e desliga os outros
+  digitalWrite(7, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(5, HIGH);
+  delay(3000); 
+}
